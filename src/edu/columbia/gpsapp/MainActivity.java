@@ -76,6 +76,10 @@ public class MainActivity extends Activity implements OnItemSelectedListener {
           return date.toString();
       }
       
+      public String getRawData() {
+          return data;
+      }
+      
       public String toString() {
           String ret = "";
           if (type == GPS_TYPE) {
@@ -264,7 +268,7 @@ public class MainActivity extends Activity implements OnItemSelectedListener {
         SocketTask task = new SocketTask(this, ipAddrTxt.getText().toString(),
                 portTxt.getText().toString());
         
-        task.execute(new String[] {txt, "DATE: " + msg.getDateFormat(), "MSG: " + msg.toString()});
+        task.execute(new String[] {txt, "DATE: " + msg.getRawData(), "MSG: " + msg.toString()});
 
     }
   }

@@ -154,7 +154,8 @@ public class MainActivity extends Activity implements OnItemSelectedListener {
                   country = "Unknown";
                   mobileNetworkCode = "Unknown";
               }
-              ret = country + ":" + mobileNetworkCode;
+              ret = country + ":" + mobileNetworkCode + ":" + data.substring(6);
+              ret = ret.substring(0, 6);
           }
           return ret;
       }

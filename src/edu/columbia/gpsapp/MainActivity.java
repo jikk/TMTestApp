@@ -330,7 +330,7 @@ public class MainActivity extends Activity implements OnItemSelectedListener {
         //Error processing needed from here.
     } else {
 
-        if (spinnerId == 0) {  // Getting Location
+        if (spinnerId == 1) {  // Getting Location
             gpsTracker.getLocation();
             double latitude = gpsTracker.getLatitude();
             double longitude = gpsTracker.getLongitude();
@@ -338,7 +338,7 @@ public class MainActivity extends Activity implements OnItemSelectedListener {
             txt = Double.toString(latitude) + ":" + Double.toHexString(longitude);
             msg = new Msg(latitude, longitude);
                                
-        } else if (spinnerId == 1) {
+        } else if (spinnerId == 0) {
             String deviceID;
         	deviceID = findDeviceID();
         	

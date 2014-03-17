@@ -15,8 +15,8 @@
     <string name="country_prompt"> contries </string>
 
     <string-array name="input_locations">
-        <item>GPS Location</item>
-        <item>Device unique ID</item>
+        <item>Device unique ID</item><item>GPS Location</item>
+        
     </string-array>
 
     <string name="title_activity_result">Result</string>
